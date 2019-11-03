@@ -1,0 +1,8 @@
+<launch>
+
+	<group ns="uav1">
+		<node name="telemPublisher" pkg="swarmhoc" type="telemPublisher.py" output="screen"/>
+        </group>
+
+
+</launch>
