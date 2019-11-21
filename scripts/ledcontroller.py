@@ -34,7 +34,7 @@ def main():
 			positive_response_number = 0
 			time.sleep(1)
 			for host in hosts:
-				response = os.system("ping -c 1 " + host)
+				response = os.system("ping -c 1 " + host + ">/dev/null 2>&1")
                         	if response == 0:
 					positive_response_number += 1
 			time.sleep(1)
